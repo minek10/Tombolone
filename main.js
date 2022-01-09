@@ -64,8 +64,9 @@ function GenerateRandomNumber(){
             //console.log("Suppression de l'élement  " + arrayNumber[index] + " dans le tableau")
         }
 
-        //afficher le numéro selectionné
+        //afficher le numéro selectionné et le lire a haute voix
         NumberToShow.innerText = number
+        tts(number);
 
         //Rafraichir la liste
         RefreshList();
@@ -104,5 +105,16 @@ function GenerateRandomNumber(){
         }
 
         //A chaque passage de cette méthode Div esclave supprimée, ensuite recrée, et rafraichissement des datas
+}
+
+function tts(number){
+
+    const jingle = ["Popopopo", "Papapapa", "Poh-poh-poh-poh-poh-lolo" , "Tintintintin", "shbrra", "Tain,Tain,Tain,Tain"]
+    let rnd = Math.floor(Math.random() * jingle.length)
+    console.log("rnd : " + rnd)
+    console.log("jingle : " + jingle[rnd])
+    var msg = new SpeechSynthesisUtterance();
+    msg.text = jingle[rnd] +", Le numéro tiré est le " + number;
+    window.speechSynthesis.speak(msg);
 
 }
