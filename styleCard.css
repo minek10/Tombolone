@@ -1,0 +1,158 @@
+body{
+    background-image: url("./bg14.png");
+    margin: 0;
+    overflow:hidden;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: auto;
+}
+
+
+#divCard {
+    top:10%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    flex-basis: auto;
+    gap: 10px;
+    background-color: transparent;
+}
+
+#label{
+    font-size: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#title{
+    font-size: 45px;
+}
+
+label{
+    font-weight: bold;
+    font-size: 40px;
+    height: 90px;
+    width: 90px;
+    background-color: transparent;
+    border: solid;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-top:10px;
+}
+
+.checked{
+    background-color: brown;
+    border: solid brown;
+    color: #F3EEE4;
+}
+
+@media screen and (min-width: 420px) {
+
+    #divCard {
+        gap: 5px;
+        top:5%;
+    }
+
+    button{
+        font-size: 422px;
+        font-weight: bold;
+        height: 120px;
+        width: 120px;
+    }
+
+}
+@media screen and (min-width: 520px) {
+
+    #divCard {
+        gap:2px;
+    }
+
+    button{
+        font-weight: bold;
+        height: 90px;
+        width: 90px;
+    }
+
+}
+
+@media screen and (min-width: 578px) {
+    #divCard {
+        gap:10px;
+    }
+    button{
+        font-size: 422px;
+        font-weight: bold;
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 675px) {
+
+
+    #divCard {
+        gap:10px;
+    }
+    button{
+        font-size: 422px;
+        font-weight: bold;
+        height: 120px;
+        width: 120px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    #divCard {
+        justify-content: center;
+    }
+
+    button{
+        font-size: 422px;
+        font-weight: bold;
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 1270px) {
+
+    button{
+        font-size: 422px;
+        font-weight: bold;
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media screen and (min-width: 1590px) {
+
+
+    #divCard {
+        justify-content: space-evenly;
+    }
+
+    button{
+        font-size: 422px;
+        font-weight: bold;
+        height: 70px;
+        width: 70px;
+    }
+}
+
+@media screen and (min-width: 1899px) {
+
+    #label{
+        font-size: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+

@@ -35,7 +35,7 @@ function GenerateAllNumber(){
 function LoadingAnimation(){
     //Affichage du loading pdt 3sec avant d'afficher le bon chiffre
     document.getElementById("number").innerHTML=`<div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status"><span class="sr-only"></span></div>`
-    window.setTimeout(GenerateRandomNumber, 3000);
+    window.setTimeout(GenerateRandomNumber, 2000);
 }
 
 
