@@ -109,12 +109,15 @@ function GenerateRandomNumber(){
 
 function tts(number){
 
-    const jingle = ["Popopopo", "Papapapa", "Poh-poh-poh-poh-poh-lolo" , "Tintintintin", "shbrra", "Tain,Tain,Tain,Tain"]
+    // const jingle = ["Popopopo", "Papapapa", "Poh-poh-poh-poh-poh-lolo" , "Tintintintin", "shbrra", "Tain,Tain,Tain,Tain"]
+    const jingle = ["Po-po-po-po", "Pomme-pomme-pomme", "Poh,poh,poh,poh,po, pololo" , "Tintintintin", "shbrra", "piffe, paffe , pouffe-", "Ta nain nain nain"]
+
     let rnd = Math.floor(Math.random() * jingle.length)
     console.log("rnd : " + rnd)
     console.log("jingle : " + jingle[rnd])
     var msg = new SpeechSynthesisUtterance();
     msg.text = jingle[rnd] +", Le numéro tiré est le " + number;
+    //msg.text = jingle +", Le numéro tiré est le " + number;
     window.speechSynthesis.speak(msg);
 
 }
